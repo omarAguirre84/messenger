@@ -49,7 +49,7 @@ public class ProfileResource {
 	public void deleteProfile(@PathParam("profileName")String profileName){
 		profileService.removeProfile(profileName);
 	}
-	
+	//XXX
 	@GET
 	@Path("/{profileName}")
 	@Produces(MediaType.APPLICATION_JSON)
