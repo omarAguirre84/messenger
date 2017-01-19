@@ -50,6 +50,9 @@ public class ProfileResource {
 		profileService.removeProfile(profileName);
 	}
 	//XXX
+	public void test(){
+		String test = "test";
+	}
 	@GET
 	@Path("/{profileName}")
 	@Produces(MediaType.APPLICATION_JSON)
