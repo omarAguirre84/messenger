@@ -17,6 +17,7 @@ public class ProfileService {
 	public ProfileService() {
 		profiles.put("Omar", new Profile(1L, "omar", "Omar", "Ag", new Date()));
 		profiles.put("Armando", new Profile(2L, "armando", "Armando", "Ag", new Date()));
+		profiles.put("Eve", new Profile(2L, "eve", "Eve", "Ag", new Date()));
 	}
 
 	public Profile getProfile(String profileName){
