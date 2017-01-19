@@ -38,8 +38,8 @@ public class ProfileResource {
 	@Path("/{profileName}")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Profile updateProfile(@PathParam("profileName")long id, Profile profile){
-		profile.setId(id);
+	public Profile updateProfile(@PathParam("profileName")String profileName, Profile profile){
+		profile.setProfileName(profileName);;
 		return profileService.updateProfile(profile);
 	}
 	

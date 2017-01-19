@@ -17,7 +17,7 @@ public class ProfileService {
 	public ProfileService() {
 		profiles.put("Omar", new Profile(1L, "omar", "Omar", "Ag", new Date()));
 		profiles.put("Armando", new Profile(2L, "armando", "Armando", "Ag", new Date()));
-		profiles.put("Eve", new Profile(2L, "eve", "Eve", "Ag", new Date()));
+		profiles.put("Eve", new Profile(3L, "eve", "Eve", "Ag", new Date()));
 	}
 
 	public Profile getProfile(String profileName){
@@ -26,7 +26,8 @@ public class ProfileService {
 	
 	public Profile addProfile(Profile profile){
 		profile.setId(profiles.size()+1);
-		profiles.put(profile.getProfileName(), profile);
+		String name = profile.getProfileName();
+		profiles.put(name, profile);
 		return profile;
 	}
 	
