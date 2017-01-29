@@ -17,7 +17,7 @@ public class MessageService {
 		messages.put(2L, new Message(2, "Hola2", "Omar"));
 	}
 	
-	
+	//X
 	public Message getMessage(Long id){
 		return messages.get(id);
 	}
